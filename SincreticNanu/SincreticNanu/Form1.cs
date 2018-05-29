@@ -35,10 +35,13 @@ namespace SincreticNanu
         {
             string s= mySerialPort.ReadExisting();
 
-            String[] temperatura = s.Split('/');
-            if (temperatura[0].Length > 0)
+            if (s.Contains("Temp:"))
             {
-                textBox1.Text = temperatura[0];
+                String[] temperatura = s.Split(':');
+                if (temperatura[1].Length > 0)
+                {
+                    textBox1.Text = temperatura[1];
+                }
             }
         }
 

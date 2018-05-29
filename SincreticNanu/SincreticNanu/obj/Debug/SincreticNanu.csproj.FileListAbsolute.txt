@@ -18,3 +18,13 @@ C:\Users\Alb Flavius-Robert\Desktop\Sincretic-Nanu\SincreticNanu\SincreticNanu\o
 C:\Users\Alb Flavius-Robert\Desktop\Sincretic-Nanu\SincreticNanu\SincreticNanu\obj\Debug\SincreticNanu.csproj.CoreCompileInputs.cache
 C:\Users\Alb Flavius-Robert\Desktop\Sincretic-Nanu\SincreticNanu\SincreticNanu\obj\Debug\SincreticNanu.exe
 C:\Users\Alb Flavius-Robert\Desktop\Sincretic-Nanu\SincreticNanu\SincreticNanu\obj\Debug\SincreticNanu.pdb
+E:\Faculta\Sincretic-Nanu\SincreticNanu\SincreticNanu\bin\Debug\SincreticNanu.exe.config
+E:\Faculta\Sincretic-Nanu\SincreticNanu\SincreticNanu\bin\Debug\SincreticNanu.exe
+E:\Faculta\Sincretic-Nanu\SincreticNanu\SincreticNanu\bin\Debug\SincreticNanu.pdb
+E:\Faculta\Sincretic-Nanu\SincreticNanu\SincreticNanu\obj\Debug\SincreticNanu.csprojResolveAssemblyReference.cache
+E:\Faculta\Sincretic-Nanu\SincreticNanu\SincreticNanu\obj\Debug\SincreticNanu.Form1.resources
+E:\Faculta\Sincretic-Nanu\SincreticNanu\SincreticNanu\obj\Debug\SincreticNanu.Properties.Resources.resources
+E:\Faculta\Sincretic-Nanu\SincreticNanu\SincreticNanu\obj\Debug\SincreticNanu.csproj.GenerateResource.Cache
+E:\Faculta\Sincretic-Nanu\SincreticNanu\SincreticNanu\obj\Debug\SincreticNanu.csproj.CoreCompileInputs.cache
+E:\Faculta\Sincretic-Nanu\SincreticNanu\SincreticNanu\obj\Debug\SincreticNanu.exe
+E:\Faculta\Sincretic-Nanu\SincreticNanu\SincreticNanu\obj\Debug\SincreticNanu.pdb
