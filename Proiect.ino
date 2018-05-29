@@ -20,6 +20,7 @@ byte Number = 0;
 byte vIndex = 0;
 bool Manual = false;
 int Temp = 1000;
+byte NrMsg = 0;
 
 int TempSenz = A0;
 float Temperature;
@@ -35,7 +36,6 @@ boolean previResult;
 boolean fail;              
 byte buttonPress = 0; 
 
-byte nrMesaje = 0;
 
 bool Blocked = true;
 bool passMode = false;
@@ -94,6 +94,11 @@ void setup()
   lcd.begin(16, 2);
   Serial.println("EEPROM Data:");
   EEPROM.get(ADR, mesaje);
+  for(int i = 0; i < mesaje.index; i++)
+  {
+   if(mesaje.mesaje[i].Viewed == false)
+    NrMsg++;
+  }
   EEPROM.get(IADR, inundatii);
   Serial.println("Loaded"); 
   debugMsg();
@@ -145,6 +150,7 @@ void loop()
       strncpy(mesaje.mesaje[mesaje.index].mesaj, chArray, sizeof(chArray) - 1);
       mesaje.index++;
       memset(chArray, 0, sizeof(chArray));
+      NrMsg++;
       EEPROM.put(ADR, mesaje);
       debugMsg();
       currentCharIdx = 0;
@@ -160,7 +166,7 @@ if (Blocked == true)
     lcd.setCursor(0, 1);
     lcd.print(getTemperature());
     lcd.print("*C - ");
-    lcd.print(nrMesaje);
+    lcd.print(NrMsg);
     lcd.print(" mesaje");
     delay(100);
     if (digitalRead(btnPlus) == LOW || digitalRead(btnMinus) == LOW || digitalRead(btnOk) == LOW || digitalRead(btnCancel) == LOW)
@@ -333,6 +339,7 @@ else
 
       if(digitalRead(btnPlus) == LOW)
       {
+        NrMsg--;
         mesaje.mesaje[vIndex].Viewed = true;
         if(vIndex + 1 < mesaje.index && mesaje.mesaje[vIndex+1].Viewed == false)
         {
@@ -353,7 +360,10 @@ else
       if(digitalRead(btnCancel) == LOW)
       {
         if(mesaje.mesaje[vIndex].Viewed == false)
+        {
           mesaje.mesaje[vIndex].Viewed = true;
+          NrMsg--;
+        }
         EEPROM.put(ADR, mesaje);
         Entered = false;
         vIndex = 0;
@@ -611,8 +621,8 @@ else
   if(Temp == 0)
   {
     int Temp1 = getTemperature();
-    String C = "Temp: ";
-    String S = C + S;
+    String C = "Temp:";
+    String S = C + Temp1;
     Temp = 1000;
     Serial.print(S);
   }
