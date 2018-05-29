@@ -5,6 +5,8 @@ using System.Data;
 using System.Drawing;
 using System.IO.Ports;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,6 +16,11 @@ namespace SincreticNanu
     public partial class Form1 : Form
     {
         SerialPort mySerialPort = new SerialPort("COM3", 9600);
+
+        NetworkCredential login;
+        SmtpClient client;
+        MailMessage msg;
+
         public Form1()
         {
             InitializeComponent();
