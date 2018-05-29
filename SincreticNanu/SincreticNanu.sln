@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SincreticNanu", "SincreticNanu\SincreticNanu.csproj", "{71964978-5BC3-4DC0-B64E-ECE8883EFD9E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71964978-5BC3-4DC0-B64E-ECE8883EFD9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71964978-5BC3-4DC0-B64E-ECE8883EFD9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71964978-5BC3-4DC0-B64E-ECE8883EFD9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71964978-5BC3-4DC0-B64E-ECE8883EFD9E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {432D10E6-B338-4DC5-8D96-D737F13E6E18}
+	EndGlobalSection
+EndGlobal
